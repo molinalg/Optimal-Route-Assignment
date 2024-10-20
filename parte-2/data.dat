@@ -1,0 +1,40 @@
+data;
+/* data section */
+
+set Parking := "Parking";
+set Paradas := "S1" "S2" "S3";
+set Colegio := "Colegio";
+
+set Alumnos := "A1" "A2" "A3" "A4" "A5" "A6" "A7" "A8";
+set Familias := "F1" "F2" "F3" "F4" "F5" "F6" "F7";
+
+param Distancias  default 1000 :
+            "Parking"   "S1"   "S2"   "S3"   "Colegio" :=
+"Parking"       .        8      10     10       .
+"S1"            8        .      3      7        6
+"S2"            10       3      .      5        7
+"S3"            10       7      5      .        4
+"Colegio"       .        6      7      4        .;
+
+param MaximoBuses := 3;
+
+param CapacidadBuses := 4;
+
+set FamiliasPorParada["F1"] := "S1";
+set FamiliasPorParada["F2"] := "S1";
+set FamiliasPorParada["F3"] := "S1";
+set FamiliasPorParada["F4"] := "S1" "S2" "S3";
+set FamiliasPorParada["F5"] := "S3";
+set FamiliasPorParada["F6"] := "S3";
+set FamiliasPorParada["F7"] := "S3";
+
+set MiembrosFamilias["F1"] := "A1";
+set MiembrosFamilias["F2"] := "A2";
+set MiembrosFamilias["F3"] := "A3";
+set MiembrosFamilias["F4"] := "A4" "A5";
+set MiembrosFamilias["F5"] := "A6";
+set MiembrosFamilias["F6"] := "A7";
+set MiembrosFamilias["F7"] := "A8";
+
+
+end;

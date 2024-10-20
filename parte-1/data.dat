@@ -1,0 +1,27 @@
+data;
+
+set Parking := "Parking";
+set Paradas := "S1" "S2" "S3";
+set Colegio := "Colegio";
+
+param Distancias  default 1000 :
+            "Parking"   "S1"   "S2"   "S3"   "Colegio" :=
+"Parking"   .           8      10     10     .
+"S1"        8           .      3      7      6
+"S2"        10          3      .      5      7
+"S3"        10          7      5      .      4
+"Colegio"   .           6      7      4      .;
+
+param MaximoBuses := 3;
+
+param CapacidadBuses := 20;
+
+param PersonasPorParada :=
+"Parking"  0
+"S1"       15
+"S2"       5
+"S3"       10
+"Colegio"  0;
+
+end;
+
