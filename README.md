@@ -1,7 +1,7 @@
 # Optimal Route Assignment
 
 ## Description
-Developed in 2022, "Optimal Route Assignment" is a university project made during the second course of Computer Engineering at UC3M in collaboration with @AliciaBR02.
+Developed in 2022, "Optimal Route Assignment" is a university project made during the third course of Computer Engineering at UC3M in collaboration with @AliciaBR02.
 
 It was made for the subject "Heuristics and Optimization" and is the solution to a problem proposed. The main goal of this project was to put in practice our knowledge about **linear programming** and teach us the use of **GLPK MathProg** to solve optimization problems.
 
